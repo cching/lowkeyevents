@@ -161,7 +161,7 @@ blockquote p {
 
 /* line 139, /Users/chris/rails_projects/LK/app/assets/stylesheets/admin/sections.scss */
 .small {
-  color: #64aff4 !important;
+  color: #9e2832 !important;
 }
 
 /* line 143, /Users/chris/rails_projects/LK/app/assets/stylesheets/admin/sections.scss */
@@ -275,14 +275,14 @@ blockquote p {
 
 /* line 12, /Users/chris/rails_projects/LK/app/assets/stylesheets/pages.scss */
 .brand-logo:hover {
-  color: #64aff4;
+  color: #000;
   text-decoration: none;
   transition: color 200ms linear;
 }
 
 /* line 18, /Users/chris/rails_projects/LK/app/assets/stylesheets/pages.scss */
 .brand-logo.scrolled {
-  color: #000;
+  color: #fff;
   transition: color 200ms linear;
 }
 
@@ -344,14 +344,14 @@ blockquote p {
 
 /* line 46, /Users/chris/rails_projects/LK/app/assets/stylesheets/scaffolds.scss */
 .brand-logo:hover {
-  color: #64aff4;
+  color: #9e2832;
   text-decoration: none;
   transition: color 200ms linear;
 }
 
 /* line 52, /Users/chris/rails_projects/LK/app/assets/stylesheets/scaffolds.scss */
 .brand-logo.scrolled {
-  color: #000;
+  color: #fff;
   transition: color 200ms linear;
 }
 
@@ -362,13 +362,13 @@ blockquote p {
 
 /* line 61, /Users/chris/rails_projects/LK/app/assets/stylesheets/scaffolds.scss */
 .logo_blue {
-  color: #64aff4;
+  color: #9e2832;
 }
 
 /* line 65, /Users/chris/rails_projects/LK/app/assets/stylesheets/scaffolds.scss */
 .navbar-default {
   background: transparent !important;
-  border-bottom: 1px solid #e1e1e1 !important;
+  border-bottom: none !important;
   transition: background-color 200ms linear;
   height: 85px !important;
 }
@@ -399,7 +399,7 @@ blockquote p {
 
 /* line 92, /Users/chris/rails_projects/LK/app/assets/stylesheets/scaffolds.scss */
 .navbar-fixed-top.scrolled {
-  background-color: #fff !important;
+  background-color: #9e2832 !important;
   transition: background-color 200ms linear;
 }
 
@@ -413,7 +413,7 @@ blockquote p {
 
 /* line 105, /Users/chris/rails_projects/LK/app/assets/stylesheets/scaffolds.scss */
 .navbar-right.scrolled > li > a {
-  color: #000 !important;
+  color: #fff !important;
   transition: color 200ms linear;
 }
 
@@ -425,7 +425,7 @@ blockquote p {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #64aff4;
+  background-color: #fff;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -480,24 +480,24 @@ blockquote p {
 
 /* line 163, /Users/chris/rails_projects/LK/app/assets/stylesheets/scaffolds.scss */
 input[type="text"]:focus {
-  border-bottom: 1px solid #64aff4 !important;
-  box-shadow: 0 1px 0 0 #64aff4 !important;
+  border-bottom: 1px solid #9e2832 !important;
+  box-shadow: 0 1px 0 0 #9e2832 !important;
 }
 
 /* line 168, /Users/chris/rails_projects/LK/app/assets/stylesheets/scaffolds.scss */
 .prefix.active {
-  color: #64aff4 !important;
+  color: #9e2832 !important;
 }
 
 /* line 172, /Users/chris/rails_projects/LK/app/assets/stylesheets/scaffolds.scss */
 input:not([type]):focus:not([readonly]) + label, input[type=text]:not(.browser-default):focus:not([readonly]) + label, input[type=password]:not(.browser-default):focus:not([readonly]) + label, input[type=email]:not(.browser-default):focus:not([readonly]) + label, input[type=url]:not(.browser-default):focus:not([readonly]) + label, input[type=time]:not(.browser-default):focus:not([readonly]) + label, input[type=date]:not(.browser-default):focus:not([readonly]) + label, input[type=datetime]:not(.browser-default):focus:not([readonly]) + label, input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label, input[type=tel]:not(.browser-default):focus:not([readonly]) + label, input[type=number]:not(.browser-default):focus:not([readonly]) + label, input[type=search]:not(.browser-default):focus:not([readonly]) + label, textarea.materialize-textarea:focus:not([readonly]) + label {
-  color: #64aff4 !important;
+  color: #9e2832 !important;
 }
 
 /* line 176, /Users/chris/rails_projects/LK/app/assets/stylesheets/scaffolds.scss */
 input.valid:not([type]), input.valid:not([type]):focus, input[type=text].valid:not(.browser-default), input[type=text].valid:not(.browser-default):focus, input[type=password].valid:not(.browser-default), input[type=password].valid:not(.browser-default):focus, input[type=email].valid:not(.browser-default), input[type=email].valid:not(.browser-default):focus, input[type=url].valid:not(.browser-default), input[type=url].valid:not(.browser-default):focus, input[type=time].valid:not(.browser-default), input[type=time].valid:not(.browser-default):focus, input[type=date].valid:not(.browser-default), input[type=date].valid:not(.browser-default):focus, input[type=datetime].valid:not(.browser-default), input[type=datetime].valid:not(.browser-default):focus, input[type=datetime-local].valid:not(.browser-default), input[type=datetime-local].valid:not(.browser-default):focus, input[type=tel].valid:not(.browser-default), input[type=tel].valid:not(.browser-default):focus, input[type=number].valid:not(.browser-default), input[type=number].valid:not(.browser-default):focus, input[type=search].valid:not(.browser-default), input[type=search].valid:not(.browser-default):focus, textarea.materialize-textarea.valid, textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-dropdown {
-  border-bottom: 1px solid #64aff4 !important;
-  box-shadow: 0 1px 0 0 #64aff4 !important;
+  border-bottom: 1px solid #9e2832 !important;
+  box-shadow: 0 1px 0 0 #9e2832 !important;
 }
 
 /* line 181, /Users/chris/rails_projects/LK/app/assets/stylesheets/scaffolds.scss */
@@ -526,8 +526,8 @@ input[type=tel]:not(.browser-default):focus:not([readonly]),
 input[type=number]:not(.browser-default):focus:not([readonly]),
 input[type=search]:not(.browser-default):focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #64aff4 !important;
-  box-shadow: 0 1px 0 0 #64aff4 !important;
+  border-bottom: 1px solid #9e2832 !important;
+  box-shadow: 0 1px 0 0 #9e2832 !important;
 }
 
 /* line 210, /Users/chris/rails_projects/LK/app/assets/stylesheets/scaffolds.scss */
@@ -538,7 +538,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
 
 /* line 215, /Users/chris/rails_projects/LK/app/assets/stylesheets/scaffolds.scss */
 .waves-effect {
-  background-color: #64aff4 !important;
+  background-color: #9e2832 !important;
 }
 
 /* line 219, /Users/chris/rails_projects/LK/app/assets/stylesheets/scaffolds.scss */

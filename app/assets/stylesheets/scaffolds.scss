@@ -44,13 +44,13 @@
 }
 
 .brand-logo:hover {
-  color:#64aff4;
+  color:#9e2832;
   text-decoration:none;
   transition: color 200ms linear;
 }
 
 .brand-logo.scrolled {
-  color: #000;
+  color: #fff;
   transition: color 200ms linear;
 }
 
@@ -59,12 +59,12 @@
 }
 
 .logo_blue {
-  color:#64aff4;
+  color:#9e2832;
 }
 
 .navbar-default{
     background:transparent !important;
-    border-bottom: 1px solid #e1e1e1 !important;
+    border-bottom: none !important;
     transition: background-color 200ms linear;
     height:85px !important;
 }
@@ -90,7 +90,7 @@
 }
 
 .navbar-fixed-top.scrolled {
-  background-color: #fff !important;
+  background-color: #9e2832 !important;
   transition: background-color 200ms linear;
 }
 
@@ -103,7 +103,7 @@
 }
 
 .navbar-right.scrolled > li > a {
-  color:#000 !important;
+  color:#fff !important;
   transition: color 200ms linear;
 }
 
@@ -114,7 +114,7 @@
   height: 2px; 
   bottom: 0;
   left: 0;
-  background-color: #64aff4;
+  background-color: #fff;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -161,21 +161,21 @@
 }
 
 input[type="text"]:focus {
-  border-bottom: 1px solid #64aff4 !important;
-  box-shadow: 0 1px 0 0 #64aff4 !important;
+  border-bottom: 1px solid #9e2832 !important;
+  box-shadow: 0 1px 0 0 #9e2832 !important;
 }
 
 .prefix.active {
-  color:#64aff4 !important;
+  color:#9e2832 !important;
 }
 
 input:not([type]):focus:not([readonly]) + label, input[type=text]:not(.browser-default):focus:not([readonly]) + label, input[type=password]:not(.browser-default):focus:not([readonly]) + label, input[type=email]:not(.browser-default):focus:not([readonly]) + label, input[type=url]:not(.browser-default):focus:not([readonly]) + label, input[type=time]:not(.browser-default):focus:not([readonly]) + label, input[type=date]:not(.browser-default):focus:not([readonly]) + label, input[type=datetime]:not(.browser-default):focus:not([readonly]) + label, input[type=datetime-local]:not(.browser-default):focus:not([readonly]) + label, input[type=tel]:not(.browser-default):focus:not([readonly]) + label, input[type=number]:not(.browser-default):focus:not([readonly]) + label, input[type=search]:not(.browser-default):focus:not([readonly]) + label, textarea.materialize-textarea:focus:not([readonly]) + label {
-  color:#64aff4 !important;
+  color:#9e2832 !important;
 }
 
 input.valid:not([type]), input.valid:not([type]):focus, input[type=text].valid:not(.browser-default), input[type=text].valid:not(.browser-default):focus, input[type=password].valid:not(.browser-default), input[type=password].valid:not(.browser-default):focus, input[type=email].valid:not(.browser-default), input[type=email].valid:not(.browser-default):focus, input[type=url].valid:not(.browser-default), input[type=url].valid:not(.browser-default):focus, input[type=time].valid:not(.browser-default), input[type=time].valid:not(.browser-default):focus, input[type=date].valid:not(.browser-default), input[type=date].valid:not(.browser-default):focus, input[type=datetime].valid:not(.browser-default), input[type=datetime].valid:not(.browser-default):focus, input[type=datetime-local].valid:not(.browser-default), input[type=datetime-local].valid:not(.browser-default):focus, input[type=tel].valid:not(.browser-default), input[type=tel].valid:not(.browser-default):focus, input[type=number].valid:not(.browser-default), input[type=number].valid:not(.browser-default):focus, input[type=search].valid:not(.browser-default), input[type=search].valid:not(.browser-default):focus, textarea.materialize-textarea.valid, textarea.materialize-textarea.valid:focus, .select-wrapper.valid > input.select-dropdown {
-  border-bottom: 1px solid #64aff4 !important;
-  box-shadow: 0 1px 0 0 #64aff4 !important;
+  border-bottom: 1px solid #9e2832 !important;
+  box-shadow: 0 1px 0 0 #9e2832 !important;
 }
 
 input#review_rate:not([type]), input#review_rate[type=text]:not(.browser-default), input#review_rate[type=password]:not(.browser-default), input#review_rate[type=email]:not(.browser-default), input#review_rate[type=url]:not(.browser-default), input#review_rate[type=time]:not(.browser-default), input#review_rate[type=date]:not(.browser-default), input#review_rate[type=datetime]:not(.browser-default), input#review_rate[type=datetime-local]:not(.browser-default), input#review_rate[type=tel]:not(.browser-default), input#review_rate[type=number]:not(.browser-default), input#review_rate[type=search]:not(.browser-default), textarea#review_rate.materialize-textarea {
@@ -203,8 +203,8 @@ input[type=tel]:not(.browser-default):focus:not([readonly]),
 input[type=number]:not(.browser-default):focus:not([readonly]),
 input[type=search]:not(.browser-default):focus:not([readonly]),
 textarea.materialize-textarea:focus:not([readonly]) {
-  border-bottom: 1px solid #64aff4 !important;
-  box-shadow: 0 1px 0 0 #64aff4 !important;
+  border-bottom: 1px solid #9e2832 !important;
+  box-shadow: 0 1px 0 0 #9e2832 !important;
 }
 
 .field_with_errors input:not([type]), .field_with_errors input[type=text]:not(.browser-default), .field_with_errors input[type=password]:not(.browser-default), .field_with_errors input[type=email]:not(.browser-default), .field_with_errors input[type=url]:not(.browser-default), .field_with_errors input[type=time]:not(.browser-default), .field_with_errors input[type=date]:not(.browser-default), .field_with_errors input[type=datetime]:not(.browser-default), .field_with_errors input[type=datetime-local]:not(.browser-default), .field_with_errors input[type=tel]:not(.browser-default), .field_with_errors input[type=number]:not(.browser-default), .field_with_errors input[type=search]:not(.browser-default), .field_with_errors textarea.materialize-textarea {
@@ -213,7 +213,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
 }
 
 .waves-effect {
-  background-color:#64aff4 !important;
+  background-color:#9e2832 !important;
 }
 
 .input_error {
