@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Low Key Events</title>
+	  <%= stylesheet_link_tag 'application', media: 'all' %>
+	  <%= javascript_include_tag 'application' %>
+	  <%= favicon_link_tag 'favicon.png' %>
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  <%= csrf_meta_tags %>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<%= render 'layouts/navbar' %>
+			<%= yield %>
+		</div>
+	</body>
+</html>

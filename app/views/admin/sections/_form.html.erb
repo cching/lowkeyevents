@@ -1,0 +1,69 @@
+<div class="parallax-container parallax-info">
+    <div class="parallax">
+      <%= image_tag("calendar.jpeg") %>
+    </div>
+    <div class="intro_header_text">
+    <p class="small_intro_header_text">
+      edit section
+    </p>
+  </div>
+</div>
+
+<%= form_for([:admin, @section]) do |f| %>
+  <% if @section.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@section.errors.count, "error") %> prohibited this section from being saved:</h2>
+
+      <ul>
+      <% @section.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="row">
+    <div class="col-xs-3"></div>
+    <div class="col-xs-6">
+      <div class="input-field col s12">
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+      </div>
+    </div>
+    <div class="col-xs-3"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-3"></div>
+    <div class="col-xs-6">
+      <div class="input-field col s12">
+        <%= f.label :description %>
+        <%= f.text_field :description %>
+      </div>
+    </div>
+    <div class="col-xs-3"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-3"></div>
+    <div class="col-xs-6">
+      <div class="input-field col s12">
+        <%= f.label :body %>
+        <%= f.text_area :body, class: "materialize-textarea" %>
+      </div>
+    </div>
+    <div class="col-xs-3"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-3"></div>
+    <div class="col-xs-6">
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+    </div>
+    <div class="col-xs-3">
+      <%= link_to 'Back', admin_sections_path %>
+    </div>
+  </div>
+<% end %>
+

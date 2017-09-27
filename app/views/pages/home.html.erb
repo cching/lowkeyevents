@@ -1,0 +1,83 @@
+<div class="parallax-container">
+	<div class="parallax animated fadeIn">
+		<%= image_tag("intro.jpeg") %>
+	</div>
+	<div class="intro_header_text">
+		<p class="small_intro_header_text">
+			event and party planning
+		</p>
+	</div>
+</div>
+
+
+<% @sections.each_with_index do |section, i| %>
+	<div class="section <%= section.color(i) %>" id="<%= downcase_name(section.name) %>">
+		<p class="section_title"><%= section.name.html_safe %></p>
+		<p class="section_description"><%= section.description.html_safe %></p>
+		<%= section.body.html_safe %>
+	</div>
+<% end %>
+
+<div id="contact_us">
+	<div class="parallax-container parallax-info">
+		<div class="parallax">
+			<%= image_tag("calendar.jpeg") %>
+		</div>
+		<div class="about_author">
+			<div class="author_info">
+				<div style = 'background-image: url(/assets/felicia.png)' class="about_author_image"></div>
+				<p class="author_name">Felicia Goodman
+					<br/>
+					<span class="author_position">event organizer</span>
+				</p>
+				<p class="author_description">
+				Description about yourself (let me know what you want me to put here)
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="section white">
+		<p class="section_title">Contact Us</p>
+		<p class="section_description">Better yet, see us in person! <br/>We love our customers, so feel free to visit during normal business hours.</p>
+		<div id="contacts_form">
+			<%= render 'contacts/form' %>
+		</div>
+	</div>
+
+	<div class="section gray">
+		<div class="footer">
+			<div class="row">
+				<div class="col-xs-1"></div>
+				<div class="col-xs-4">
+					<p class="footer_title">
+						Low Key Event Planning & Consulting
+					</p>
+					<p class="footer_description">
+						309.663.1345
+					</p>
+				</div>
+				<div class="col-xs-3">
+					<p class="footer_title">
+						Location
+					</p>
+					<p class="footer_description">
+						2422 E Washington St, Suite 109<br/>
+						Bloomington, Illinois 61704
+						
+					</p>
+				</div>
+				<div class="col-xs-4">
+					<p class="footer_title">
+						Hours
+					</p>
+					<p class="footer_description">
+						Monday - Friday: Evenings, by appointment <br/>
+						Saturday: By appointment<br/>
+						Sunday: By appointment 
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

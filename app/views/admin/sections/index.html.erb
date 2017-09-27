@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<div class="parallax-container parallax-info">
+    <div class="parallax">
+      <%= image_tag("calendar.jpeg") %>
+    </div>
+    <div class="intro_header_text">
+    <p class="small_intro_header_text">
+      edit pages
+    </p>
+  </div>
+</div>
+
+<br/>
+<% @sections.each do |section| %>
+<div class="row">
+  <div class="col-xs-4"></div>
+  <div class="col-xs-1"><%= section.name %></div>
+  <div class="col-xs-1"><%= link_to 'Edit', edit_admin_section_path(section) %></div>
+  <div class="col-xs-1"><%= link_to 'Delete', admin_section_path(section), method: :delete, data: { confirm: 'Are you sure?' } %></div>
+  <div class="col-xs-5"></div>
+</div>
+<% end %>
+
+<div class="row">
+  <div class="col-xs-4"></div>
+  <div class="col-xs-8">
+    <%= link_to 'New Section', new_admin_section_path %>
+  </div>
+</div>

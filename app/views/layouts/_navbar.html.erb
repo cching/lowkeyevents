@@ -1,0 +1,23 @@
+<div class="navbar navbar-default navbar-fixed-top animated" id="nav" role="navigation">
+  <div class="container">
+    <div class="collapse navbar-collapse">
+    	
+
+        <% if current_user %>
+          <%= link_to admin_sections_path, class: "brand-logo left" do %>
+              Low Key Event Planning & Consulting
+            <% end %>
+        <% else %>
+        <%= link_to new_user_session_path, class: "brand-logo left" do %>
+            Low Key Event Planning & Consulting
+          <% end %>
+        <% end %>
+      	<ul class="nav navbar-nav navbar-right" id="nav-right">
+	        <% Section.all.order(:created_at).each do |section| %>
+	          <li><a href="#<%= downcase_name(section.name) %>"><%= section.name %></a></li>
+	        <% end %>
+          <li><a href="#contact_us">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
